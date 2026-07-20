@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bancamiga Infinitua - Agencia integral de marketing estratégico e impresión digital con 15 años de experiencia. Soluciones que posicionan tu marca.">
+    <title>Bancamiga Infinitua | Marketing Estratégico e Impresión Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #f97316;
+            --accent-color: #3b82f6;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(249, 115, 22, 0.7)), url('hero-bg.jpg') center/cover no-repeat;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            transform: scale(1.05);
+        }
+        
+        .social-section {
+            background: url('social-bg.jpg') center/cover no-repeat;
+            padding: 80px 0;
+        }
+        
+        .social-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            transition: all 0.3s;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2) rotate(10deg);
+        }
+        
+        .facebook { background: #1877f2; }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .twitter { background: #1da1f2; }
+        .linkedin { background: #0077b5; }
+        .whatsapp { background: #25d366; }
+        
+        .stats-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="Bancamiga Infinitua Logo">
+                <span class="fw-bold">Bancamiga Infinitua</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mision.html">Misión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vision.html">Visión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-3 fw-bold mb-4">Bienvenido a Bancamiga Infinitua</h1>
+                    <p class="lead mb-4">Transformamos ideas en resultados tangibles. Con más de 15 años de experiencia, somos tu aliado estratégico en marketing digital e impresión de alta calidad.</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="productos.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket me-2"></i>Ver Nuestros Servicios
+                        </a>
+                        <a href="contacto.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-phone me-2"></i>Contáctanos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-number" data-target="15">0</div>
+                    <p class="mb-0">Años de Experiencia</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-number" data-target="500">0</div>
+                    <p class="mb-0">Clientes Satisfechos</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-number" data-target="1200">0</div>
+                    <p class="mb-0">Proyectos Realizados</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-number" data-target="98">0</div>
+                    <p class="mb-0">% Satisfacción</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">¿Qué Ofrecemos?</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card service-card h-100 text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h3 class="h4">Impresión Digital Profesional</h3>
+                        <p class="text-muted">Impresiones de alta calidad con durabilidad garantizada. Mayor capacidad de producción en menor tiempo, perfectas para tu marca.</p>
+                        <a href="productos.html" class="btn btn-outline-primary mt-auto">Conocer Más</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card service-card h-100 text-center p-4">
+                        <div class="feature-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="h4">Marketing Estratégico</h3>
+                        <p class="text-muted">Acompañamos a las marcas a posicionarse en el mercado con estrategias efectivas que generan resultados medibles y sostenibles.</p>
+                        <a href="productos.html" class="btn btn-outline-primary mt-auto">Conocer Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section text-white text-center">
+        <div class="container">
+            <h2 class="mb-5">Síguenos en Redes Sociales</h2>
+            <p class="lead mb-4">Mantente conectado con Bancamiga Infinitua y descubre nuestras últimas creaciones y proyectos.</p>
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="#" class="social-icon facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-icon instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-icon twitter" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-icon whatsapp" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">¿Por Qué Elegirnos?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="text-center p-3">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Entrega Rápida</h4>
+                        <p class="text-muted">Cumplimos con los tiempos acordados para que tu proyecto esté listo cuando lo necesitas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-3">
+                        <div class="feature-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4>Calidad Garantizada</h4>
+                        <p class="text-muted">Cada trabajo que realizamos está respaldado por nuestro compromiso de excelencia y satisfacción.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center p-3">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Atención Personalizada</h4>
+                        <p class="text-muted">Te escuchamos y adaptamos nuestras soluciones a tus necesidades específicas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Bancamiga Infinitua</h5>
+                    <p class="text-muted">Agencia integral de marketing estratégico e impresión digital con más de 15 años transformando marcas.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="sobre-nosotros.html" class="text-muted text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="mision.html" class="text-muted text-decoration-none">Misión</a></li>
+                        <li><a href="vision.html" class="text-muted text-decoration-none">Visión</a></li>
+                        <li><a href="productos.html" class="text-muted text-decoration-none">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="text-muted mb-1"><i class="fab fa-whatsapp me-2"></i> WhatsApp: +XX XXX XXX XXXX</p>
+                    <p class="text-muted mb-1"><i class="fas fa-envelope me-2"></i> info@bancamigainfinitua.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 Bancamiga Infinitua. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animación de contador
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const duration = 2000;
+                const increment = target / (duration / 16);
+                let current = 0;
+                
+                const updateCounter = () => {
+                    current += increment;
+                    if (current < target) {
+                        counter.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                updateCounter();
+            });
+        }
+        
+        // Ejecutar cuando la página carga
+        window.addEventListener('load', animateCounters);
+        
+        // Smooth scroll para enlaces
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

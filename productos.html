@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios de Bancamiga Infinitua - Marketing estratégico, impresión digital profesional, diseño gráfico y soluciones integrales para tu marca.">
+    <title>Servicios | Bancamiga Infinitua</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #f97316;
+            --accent-color: #3b82f6;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 70px;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            transition: all 0.3s;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .service-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            margin: 0 auto 20px;
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: rotate(360deg) scale(1.1);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            transform: scale(1.05);
+        }
+        
+        .service-category {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list i {
+            color: var(--secondary-color);
+            font-size: 1.2rem;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .category-section {
+            padding: 60px 0;
+        }
+        
+        .category-section:nth-child(even) {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="Bancamiga Infinitua Logo">
+                <span class="fw-bold">Bancamiga Infinitua</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mision.html">Misión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vision.html">Visión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="productos.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Nuestros Servicios</h1>
+            <p class="lead">Soluciones integrales para el éxito de tu marca</p>
+        </div>
+    </section>
+
+    <!-- Marketing Services -->
+    <section class="category-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="service-category">
+                    <i class="fas fa-bullseye me-2"></i>Marketing Estratégico
+                </span>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Estrategia de Marca</h4>
+                        <p class="text-muted">Desarrollamos estrategias personalizadas que posicionan tu marca en el mercado y la diferencian de la competencia.</p>
+                        <ul class="feature-list text-start">
+                            <li><i class="fas fa-check"></i> Análisis de mercado</li>
+                            <li><i class="fas fa-check"></i> Posicionamiento de marca</li>
+                            <li><i class="fas fa-check"></i> Planificación estratégica</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h4>Marketing Digital</h4>
+                        <p class="text-muted">Creamos campañas digitales efectivas que aumentan tu visibilidad online y generan leads calificados.</p>
+                        <ul class="feature-list text-start">
+                            <li><i class="fas fa-check"></i> Redes sociales</li>
+                            <li><i class="fas fa-check"></i> SEO y SEM</li>
+                            <li><i class="fas fa-check"></i> Email marketing</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Consultoría de Negocios</h4>
+                        <p class="text-muted">Asesoramos a empresas en su proceso de crecimiento con soluciones adaptadas a sus necesidades específicas.</p>
+                        <ul class="feature-list text-start">
+                            <li><i class="fas fa-check"></i> Diagnóstico empresarial</li>
+                            <li><i class="fas fa-check"></i> Plan de acción</li>
+                            <li><i class="fas fa-check"></i> Seguimiento de resultados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Printing Services -->
+    <section class="category-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="service-category">
+                    <i class="fas fa-print me-2"></i>Impresión Digital
+                </span>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4>Impresión Gran Formato</h4>
+                        <p class="text-muted">Impresiones de alta calidad en grandes dimensiones con materiales duraderos y resistentes.</p>
+                        <ul class="feature-list text-start">
+                            <li><i class="fas fa-check"></i> Banners y lonas</li>
+                            <li><i class="fas fa-check"></i> Vallas publicitarias</li>
+                            <li><i class="fas fa-check"></i> Rotulación vehicular</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h4>Material Corporativo</h4>
+                        <p class="text-muted">Impresión profesional de tarjetas, folletos, catálogos y todo tipo de material promocional.</p>
+                        <ul class="feature-list text-start">
+                            <li><i class="fas fa-check"></i> Tarjetas de presentación</li>
+                            <li><i class="fas fa-check"></i> Folletos y trípticos</li>
+                            <li><i class="fas fa-check"></i> Catálogos corporativos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h4>Etiquetas y Stickers</h4>
+                        <p class="text-muted">Etiquetas personalizadas de alta calidad para productos, embalajes y promoción de marca.</p>
+                        <ul class="feature-list text-start">
+                            <li><i class="fas fa-check"></i> Etiquetas adhesivas</li>
+                            <li><i class="fas fa-check"></i> Stickers promocionales</li>
+                            <li><i class="fas fa-check"></i> Etiquetas de producto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Services -->
+    <section class="category-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="service-category">
+                    <i class="fas fa-palette me-2"></i>Diseño Creativo
+                </span>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <h4>Diseño Gráfico</h4>
+                        <p class="text-muted">Creamos diseños visuales impactantes que comunican la esencia de tu marca de manera efectiva.</p>
+                        <ul class="feature-list text-start">
+                            <li><i class="fas fa-check"></i> Logotipos e identidad</li>
+                            <li><i class="fas fa-check"></i> Material publicitario</li>
+                            <li><i class="fas fa-check"></i> Diseño editorial</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Diseño Web</h4>
+                        <p class="text-muted">Desarrollamos sitios web profesionales, modernos y optimizados para conversiones y experiencia de usuario.</p>
+                        <ul class="feature-list text-start">
+                            <li><i class="fas fa-check"></i> Sitios corporativos</li>
+                            <li><i class="fas fa-check"></i> E-commerce</li>
+                            <li><i class="fas fa-check"></i> Landing pages</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card p-4 text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>Contenido Multimedia</h4>
+                        <p class="text-muted">Producimos videos, animaciones y contenido visual atractivo para tus campañas de marketing.</p>
+                        <ul class="feature-list text-start">
+                            <li><i class="fas fa-check"></i> Videos corporativos</li>
+                            <li><i class="fas fa-check"></i> Animaciones</li>
+                            <li><i class="fas fa-check"></i> Fotografía profesional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); color: white;">
+        <div class="container">
+            <h2 class="text-center mb-5">¿Por Qué Elegir Bancamiga Infinitua?</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-medal fa-3x"></i>
+                    </div>
+                    <h5>Calidad Garantizada</h5>
+                    <p class="mb-0 small">Cada trabajo está respaldado por nuestro compromiso de excelencia</p>
+                </div>
+                <div class="col-md-3 col-6 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-clock fa-3x"></i>
+                    </div>
+                    <h5>Entrega Puntual</h5>
+                    <p class="mb-0 small">Cumplimos con los tiempos acordados sin excepciones</p>
+                </div>
+                <div class="col-md-3 col-6 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-dollar-sign fa-3x"></i>
+                    </div>
+                    <h5>Precios Competitivos</h5>
+                    <p class="mb-0 small">Ofrecemos la mejor relación calidad-precio del mercado</p>
+                </div>
+                <div class="col-md-3 col-6 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-headset fa-3x"></i>
+                    </div>
+                    <h5>Atención 24/7</h5>
+                    <p class="mb-0 small">Estamos disponibles cuando nos necesites</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 text-center" style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); color: white;">
+        <div class="container">
+            <h2 class="mb-4">¿Listo para comenzar tu proyecto?</h2>
+            <p class="lead mb-4">Contáctanos hoy mismo y recibe una cotización personalizada sin compromiso</p>
+            <a href="contacto.html" class="btn btn-light btn-lg">
+                <i class="fas fa-paper-plane me-2"></i>Solicitar Cotización
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Bancamiga Infinitua</h5>
+                    <p class="text-muted">Agencia integral de marketing estratégico e impresión digital con más de 15 años transformando marcas.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html" class="text-muted text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="mision.html" class="text-muted text-decoration-none">Misión</a></li>
+                        <li><a href="vision.html" class="text-muted text-decoration-none">Visión</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="text-muted mb-1"><i class="fab fa-whatsapp me-2"></i> WhatsApp: +XX XXX XXX XXXX</p>
+                    <p class="text-muted mb-1"><i class="fas fa-envelope me-2"></i> info@bancamigainfinitua.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 Bancamiga Infinitua. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

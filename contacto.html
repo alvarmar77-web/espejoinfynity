@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a Bancamiga Infinitua - Estamos listos para ayudarte. Escríbenos por WhatsApp, email o visita nuestras oficinas.">
+    <title>Contacto | Bancamiga Infinitua</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #f97316;
+            --accent-color: #3b82f6;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 70px;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-card {
+            border: none;
+            border-radius: 15px;
+            transition: all 0.3s;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            transform: scale(1.05);
+        }
+        
+        .form-control:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 0.2rem rgba(249, 115, 22, 0.25);
+        }
+        
+        .social-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+            transition: all 0.3s;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        
+        .facebook { background: #1877f2; }
+        .instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .twitter { background: #1da1f2; }
+        .linkedin { background: #0077b5; }
+        .whatsapp { background: #25d366; }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .contact-info-box {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="Bancamiga Infinitua Logo">
+                <span class="fw-bold">Bancamiga Infinitua</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mision.html">Misión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vision.html">Visión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contáctanos</h1>
+            <p class="lead">Estamos aquí para ayudarte. ¡Hablemos!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Envíanos un Mensaje</h2>
+                    <p class="text-muted mb-4">Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+                    
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Nombre Completo *</label>
+                                <input type="text" class="form-control form-control-lg" id="nombre" required>
+                                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Correo Electrónico *</label>
+                                <input type="email" class="form-control form-control-lg" id="email" required>
+                                <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control form-control-lg" id="telefono">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empresa" class="form-label">Empresa</label>
+                                <input type="text" class="form-control form-control-lg" id="empresa">
+                            </div>
+                            <div class="col-12">
+                                <label for="servicio" class="form-label">Servicio de Interés</label>
+                                <select class="form-select form-select-lg" id="servicio">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="marketing">Marketing Estratégico</option>
+                                    <option value="impresion">Impresión Digital</option>
+                                    <option value="diseno">Diseño Gráfico</option>
+                                    <option value="web">Diseño Web</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label">Mensaje *</label>
+                                <textarea class="form-control form-control-lg" id="mensaje" rows="5" required></textarea>
+                                <div class="invalid-feedback">Por favor escribe tu mensaje.</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="privacidad" required>
+                                    <label class="form-check-label" for="privacidad">
+                                        Acepto la <a href="#" class="text-decoration-none">Política de Privacidad</a> *
+                                    </label>
+                                    <div class="invalid-feedback">Debes aceptar la política de privacidad.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Información de Contacto</h2>
+                    
+                    <div class="contact-info-box">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="contact-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem; flex-shrink: 0;">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h5>WhatsApp</h5>
+                                <p class="text-muted mb-0">+XX XXX XXX XXXX</p>
+                                <a href="https://wa.me/XXXXXXXXXX" class="text-decoration-none">Enviar mensaje directo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-box">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="contact-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem; flex-shrink: 0;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Correo Electrónico</h5>
+                                <p class="text-muted mb-0">info@bancamigainfinitua.com</p>
+                                <a href="mailto:info@bancamigainfinitua.com" class="text-decoration-none">Enviar email</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-box">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="contact-icon me-3" style="width: 60px; height: 60px; font-size: 1.5rem; flex-shrink: 0;">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h5>Horario de Atención</h5>
+                                <p class="text-muted mb-0">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                                <p class="text-muted mb-0">Sábados: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-box">
+                        <h5 class="mb-3">Síguenos en Redes Sociales</h5>
+                        <div class="d-flex justify-content-start flex-wrap">
+                            <a href="#" class="social-icon facebook" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon instagram" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon twitter" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon linkedin" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ¿Cuánto tiempo tardan en responder?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Nos comprometemos a responder todos los mensajes en un máximo de 24 horas hábiles. Para consultas urgentes, te recomendamos contactarnos directamente por WhatsApp.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    ¿Ofrecen cotizaciones gratuitas?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Sí, ofrecemos cotizaciones personalizadas sin costo ni compromiso. Solo necesitamos conocer los detalles de tu proyecto para prepararte una propuesta detallada.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ¿Trabajan con clientes internacionales?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Actualmente trabajamos principalmente con clientes nacionales, pero estamos abiertos a proyectos internacionales. Contáctanos para evaluar las posibilidades de colaboración.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    ¿Cuáles son sus métodos de pago?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Aceptamos transferencias bancarias, pagos móviles y otros métodos de pago electrónicos. Los detalles específicos se coordinan al momento de confirmar el proyecto.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 text-center" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+        <div class="container">
+            <h2 class="mb-4">¿Prefieres llamarnos directamente?</h2>
+            <p class="lead mb-4">Nuestro equipo está listo para atenderte</p>
+            <a href="tel:+XXXXXXXXXX" class="btn btn-light btn-lg">
+                <i class="fas fa-phone me-2"></i>Llamar Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Bancamiga Infinitua</h5>
+                    <p class="text-muted">Agencia integral de marketing estratégico e impresión digital con más de 15 años transformando marcas.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html" class="text-muted text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="mision.html" class="text-muted text-decoration-none">Misión</a></li>
+                        <li><a href="vision.html" class="text-muted text-decoration-none">Visión</a></li>
+                        <li><a href="productos.html" class="text-muted text-decoration-none">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="text-muted mb-1"><i class="fab fa-whatsapp me-2"></i> WhatsApp: +XX XXX XXX XXXX</p>
+                    <p class="text-muted mb-1"><i class="fas fa-envelope me-2"></i> info@bancamigainfinitua.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 Bancamiga Infinitua. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Validación de formulario Bootstrap
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+            Array.prototype.slice.call(forms).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    } else {
+                        // Aquí puedes agregar el código para enviar el formulario
+                        alert('¡Mensaje enviado con éxito! Te contactaremos pronto.');
+                        form.reset();
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>

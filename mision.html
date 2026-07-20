@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Misión de Bancamiga Infinitua - Nuestro compromiso es transformar ideas en resultados que impulsen el éxito de nuestros clientes.">
+    <title>Misión | Bancamiga Infinitua</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #f97316;
+            --accent-color: #3b82f6;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 70px;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .mission-card {
+            border: none;
+            border-radius: 15px;
+            transition: all 0.3s;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .mission-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .mission-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin: 0 auto 20px;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+        }
+        
+        .objective-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .objective-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: start;
+            gap: 15px;
+        }
+        
+        .objective-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .objective-list i {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: 5px;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="logo.png" alt="Bancamiga Infinitua Logo">
+                <span class="fw-bold">Bancamiga Infinitua</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="mision.html">Misión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vision.html">Visión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Nuestra Misión</h1>
+            <p class="lead">El propósito que nos guía cada día</p>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="highlight-box text-center">
+                        <i class="fas fa-bullseye fa-3x mb-4"></i>
+                        <h2 class="display-6 fw-bold mb-4">Propósito de Bancamiga Infinitua</h2>
+                        <p class="lead mb-0">Proporcionar soluciones integrales de marketing estratégico e impresión digital que transformen las ideas de nuestros clientes en resultados tangibles, contribuyendo al crecimiento y posicionamiento de sus marcas en el mercado, mediante un servicio personalizado, profesional y de excelencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Pillars -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Pilares de Nuestra Misión</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card mission-card h-100 p-4 text-center">
+                        <div class="mission-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Innovación Creativa</h4>
+                        <p class="text-muted">Desarrollamos soluciones originales y creativas que destacan a nuestros clientes en un mercado competitivo, adaptándonos a las nuevas tendencias digitales.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mission-card h-100 p-4 text-center">
+                        <div class="mission-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Enfoque en el Cliente</h4>
+                        <p class="text-muted">Escuchamos atentamente las necesidades de cada cliente para ofrecer soluciones personalizadas que realmente respondan a sus objetivos específicos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mission-card h-100 p-4 text-center">
+                        <div class="mission-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Resultados Medibles</h4>
+                        <p class="text-muted">Nos comprometemos a entregar resultados que puedan ser medidos y que contribuyan directamente al éxito y crecimiento del negocio de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Nuestros Objetivos Estratégicos</h2>
+                    <ul class="objective-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h5>Excelencia en Calidad</h5>
+                                <p class="text-muted mb-0">Garantizar que cada proyecto entregue cumpla con los más altos estándares de calidad y satisfacción del cliente.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h5>Desarrollo Profesional</h5>
+                                <p class="text-muted mb-0">Mantener un equipo altamente capacitado y actualizado en las últimas tendencias y tecnologías del sector.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h5>Relaciones Duraderas</h5>
+                                <p class="text-muted mb-0">Construir relaciones de largo plazo con nuestros clientes basadas en la confianza, transparencia y resultados.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h5>Impacto Positivo</h5>
+                                <p class="text-muted mb-0">Contribuir al crecimiento económico de nuestros clientes mediante estrategias efectivas de marketing.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mission-card p-4">
+                        <h3 class="mb-4">¿Cómo Cumplimos Nuestra Misión?</h3>
+                        <div class="d-flex mb-3 align-items-start">
+                            <div class="mission-icon me-3" style="width: 50px; height: 50px; font-size: 1.2rem; flex-shrink: 0;">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div>
+                                <h5>Tecnología de Vanguardia</h5>
+                                <p class="text-muted mb-0">Utilizamos equipos y software de última generación para garantizar resultados profesionales.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3 align-items-start">
+                            <div class="mission-icon me-3" style="width: 50px; height: 50px; font-size: 1.2rem; flex-shrink: 0;">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div>
+                                <h5>Estrategia Inteligente</h5>
+                                <p class="text-muted mb-0">Analizamos cada situación para desarrollar estrategias personalizadas y efectivas.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3 align-items-start">
+                            <div class="mission-icon me-3" style="width: 50px; height: 50px; font-size: 1.2rem; flex-shrink: 0;">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div>
+                                <h5>Compromiso Total</h5>
+                                <p class="text-muted mb-0">Nos involucramos completamente en cada proyecto como si fuera nuestro propio negocio.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="mission-icon me-3" style="width: 50px; height: 50px; font-size: 1.2rem; flex-shrink: 0;">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <div>
+                                <h5>Mejora Continua</h5>
+                                <p class="text-muted mb-0">Evaluamos constantemente nuestros procesos para optimizar la calidad del servicio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 text-center" style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); color: white;">
+        <div class="container">
+            <h2 class="mb-4">¿Quieres conocer nuestra Visión?</h2>
+            <p class="lead mb-4">Descubre hacia dónde nos dirigimos y cuáles son nuestras metas a futuro</p>
+            <a href="vision.html" class="btn btn-light btn-lg">
+                <i class="fas fa-eye me-2"></i>Ver Nuestra Visión
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Bancamiga Infinitua</h5>
+                    <p class="text-muted">Agencia integral de marketing estratégico e impresión digital con más de 15 años transformando marcas.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html" class="text-muted text-decoration-none">Sobre Nosotros</a></li>
+                        <li><a href="vision.html" class="text-muted text-decoration-none">Visión</a></li>
+                        <li><a href="productos.html" class="text-muted text-decoration-none">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="text-muted mb-1"><i class="fab fa-whatsapp me-2"></i> WhatsApp: +XX XXX XXX XXXX</p>
+                    <p class="text-muted mb-1"><i class="fas fa-envelope me-2"></i> info@bancamigainfinitua.com</p>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-muted">
+                <p class="mb-0">&copy; 2026 Bancamiga Infinitua. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
