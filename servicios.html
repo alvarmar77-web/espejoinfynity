@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contenido de Canto y Cuento Provincial - Juegos, música, cuentos y tradiciones navideñas venezolanas">
+    <title>Contenido y Servicios | Canto y Cuento Provincial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #003366; --secondary: #FFD700; }
+        body { font-family: 'Poppins', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Fredoka One', cursive; }
+        .navbar { background: linear-gradient(135deg, var(--primary) 0%, #004080 100%); }
+        .navbar-brand { color: white !important; font-family: 'Fredoka One', cursive; }
+        .nav-link { color: rgba(255,255,255,0.9) !important; }
+        .nav-link:hover, .nav-link.active { color: var(--secondary) !important; }
+        .page-header { background: linear-gradient(135deg, var(--primary) 0%, #0059b3 100%); padding: 150px 0 80px; margin-top: 76px; color: white; }
+        .service-card { background: white; border-radius: 15px; padding: 2rem; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: all 0.3s; height: 100%; border: 2px solid transparent; }
+        .service-card:hover { transform: translateY(-5px); border-color: var(--secondary); box-shadow: 0 10px 25px rgba(0,0,0,0.12); }
+        .service-icon { font-size: 3rem; color: var(--primary); margin-bottom: 1rem; }
+        .bg-primary-gradient { background: linear-gradient(135deg, var(--primary) 0%, #004080 100%); color: white; }
+        footer { background: var(--primary); color: white; padding: 2rem 0; }
+        footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
+        footer a:hover { color: var(--secondary); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-book-open me-2"></i>Canto y Cuento Provincial</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="servicios.html">Contenido</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mision-vision.html">Misión y Visión</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3"><i class="fas fa-star me-3"></i>Nuestro Contenido</h1>
+            <p class="lead">Explora el universo de tradiciones de Canto y Cuento Provincial</p>
+        </div>
+    </header>
+
+    <!-- País del Juego -->
+    <section class="py-5" id="jugar">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">País del Juego</h2>
+                <p class="text-muted">Jugar Ayer y Hoy en Provincial</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <i class="fas fa-circle-notch service-icon text-warning"></i>
+                        <h4>El Gurrufío</h4>
+                        <p class="text-muted small">Descubre este tradicional juguete venezolano hecho con semillas y su forma única de jugar.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <i class="fas fa-circle service-icon text-warning"></i>
+                        <h4>Las Metras</h4>
+                        <p class="text-muted small">Aprende las reglas y técnicas de este juego clásico que ha divertido a generaciones.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <i class="fas fa-sync-alt service-icon text-warning"></i>
+                        <h4>El Trompo</h4>
+                        <p class="text-muted small">Baila el trompo como los grandes maestros de este arte tradicional venezolano.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <i class="fas fa-wind service-icon text-warning"></i>
+                        <h4>El Papagayo</h4>
+                        <p class="text-muted small">Construye y vuela tu propio papagayo siguiendo nuestras instrucciones paso a paso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Música y Palabrería -->
+    <section class="py-5 bg-light" id="musica">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="service-card text-start">
+                        <i class="fas fa-music service-icon"></i>
+                        <h4>Música Infantil Provincial</h4>
+                        <p>Canciones que han acompañado nuestra infancia:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-play-circle text-primary me-2"></i>Canciones de cuna (Arrorró mi niño)</li>
+                            <li class="mb-2"><i class="fas fa-play-circle text-primary me-2"></i>Canciones de juego (De la cabeza, Sapito)</li>
+                            <li class="mb-2"><i class="fas fa-play-circle text-primary me-2"></i>Aguinaldos y Gaitas tradicionales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6" id="palabreria">
+                    <div class="service-card text-start">
+                        <i class="fas fa-language service-icon"></i>
+                        <h4>Palabrería y Tradición Oral</h4>
+                        <p>El arte de las palabras en la cultura venezolana:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-question-circle text-primary me-2"></i>Adivinanzas populares</li>
+                            <li class="mb-2"><i class="fas fa-comment-dots text-primary me-2"></i>Trabalenguas divertidos</li>
+                            <li class="mb-2"><i class="fas fa-book-open text-primary me-2"></i>Refranes y sabiduría popular</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navidad -->
+    <section class="py-5 bg-primary-gradient" id="navidad">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-white">Mágica Navidad Provincial</h2>
+                <p class="text-white-50">Tradiciones navideñas que nos unen</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="service-card bg-white text-dark">
+                        <i class="fas fa-music service-icon text-danger"></i>
+                        <h4>Parrandas y Gaitas</h4>
+                        <p class="text-muted">La música que alegra nuestras celebraciones decembrinas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card bg-white text-dark">
+                        <i class="fas fa-gift service-icon text-success"></i>
+                        <h4>Intercambio de Regalos</h4>
+                        <p class="text-muted">Tradición de compartir, amar y celebrar en familia.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card bg-white text-dark">
+                        <i class="fas fa-church service-icon text-primary"></i>
+                        <h4>Misa del Gallo</h4>
+                        <p class="text-muted">La tradición religiosa y comunitaria más importante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Fundación BBVA Provincial. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
